@@ -29,6 +29,7 @@ class Kubernetes::Software::Cilium
     --set tunnelProtocol=vxlan \
     --set ipam.mode="kubernetes" \
     --set kubeProxyReplacement=true \
+    --set socketLB.hostNamespaceOnly=true \
     --set hubble.enabled=true \
     --set hubble.metrics.enabled="{dns,drop,tcp,flow,port-distribution,icmp,http}" \
     --set hubble.relay.enabled=true \
